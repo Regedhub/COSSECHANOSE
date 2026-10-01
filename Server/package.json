@@ -1,0 +1,16 @@
+{
+  "name": "cosecha-tung-relay",
+  "version": "16.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node relay.mjs",
+    "test": "node --test relay.test.mjs"
+  },
+  "engines": {
+    "node": "22.x"
+  },
+  "dependencies": {
+    "ws": "8.22.0"
+  }
+}
