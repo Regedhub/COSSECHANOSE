@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: cosecha-tung
+    runtime: node
+    plan: free
+    rootDir: Server
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: MAX_ROOMS
+        value: "100"
